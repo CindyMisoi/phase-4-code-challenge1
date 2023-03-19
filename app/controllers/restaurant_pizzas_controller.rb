@@ -6,8 +6,8 @@ rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_resp
         render json: restaurant_pizzas
     end
     def create
-        restaurant = RestaurantPizza.create!(price: params[:price], pizza_id: params[:pizza_id], restaurant_id: params[:restaurant_id])
-        render json: restaurant, status: :created
+        restaurant_pizza = RestaurantPizza.create!(price: params[:price], pizza_id: params[:pizza_id], restaurant_id: params[:restaurant_id])
+        render json: restaurant_pizza, status: :created
     end
 
     # private
