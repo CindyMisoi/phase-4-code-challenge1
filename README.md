@@ -1,21 +1,30 @@
-# README
+## PHASE-4-CODE-CHALLENGE1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
 Things you may want to cover:
 
-* Ruby version 
+* Ruby version  - 3.0.0
 
 * System dependencies
+checkout the gemfile for dependencies
 
 * Configuration
 
 * Database creation
+### creating database
+rails new app-name –api –minimal –database=postgresql
+
+--database=postgresql: this flag tells rails to use Postgres database instead of SQLite (which rails uses by default). It adds Postgres gem, gem pg, in your Gemfile.
+
 
 * Database initialization
+### Configuring your database for psql
+rails db:create - creates a new database
+rails db:migrate - migrations are done using this command and a schema is generated
+rails db:seed - this command is used to populate your table with data
 
-
+### Database associations
+![alt text](/pizzas.png)
 
 * Services (job queues, cache servers, search engines, etc.)
 
