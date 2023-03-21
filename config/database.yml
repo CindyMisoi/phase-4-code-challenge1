@@ -12,8 +12,8 @@ default: &default
 development:
   <<: *default
   database: pizzas
-  username: user
-  password: usser
+  username: postgres
+  password: postgres
 
 
 # Warning: The database defined as "test" will be erased and
